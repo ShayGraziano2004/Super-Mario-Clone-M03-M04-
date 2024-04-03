@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgt02yoh6xsg8"]
+
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_p52jp"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_p52jp")
+
+[node name="TimeLabel" type="Label" parent="."]
+offset_right = 39.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 35
+text = "time"

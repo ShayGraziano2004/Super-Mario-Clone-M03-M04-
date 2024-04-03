@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdx458uv35vwu"]
+
+[ext_resource type="Script" path="res://you win.gd" id="1_f7mpo"]
+
+[node name="YouWinHud" type="CanvasLayer"]
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
+script = ExtResource("1_f7mpo")
+
+[node name="YouWinLabel" type="Label" parent="."]
+offset_left = 43.0
+offset_top = 157.0
+offset_right = 1102.0
+offset_bottom = 499.0
+theme_override_font_sizes/font_size = 250
+text = "You Win!"
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 250.667
+offset_top = 477.333
+offset_right = 290.667
+offset_bottom = 500.333
+theme_override_font_sizes/font_size = 250

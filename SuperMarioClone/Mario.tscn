@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://btwwdf3ovv3ip"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_5vvrj"]
+[ext_resource type="Texture2D" uid="uid://bdasi1qdcew0j" path="res://TulipSim/TulipSprite.png" id="2_1ckhp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35vqk"]
+size = Vector2(2172, 1683)
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_5vvrj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["Player"]]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_1ckhp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
+position = Vector2(3, 7.5)
+shape = SubResource("RectangleShape2D_35vqk")

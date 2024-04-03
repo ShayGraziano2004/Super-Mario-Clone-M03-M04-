@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://w2obmr7peucf"]
+
+[ext_resource type="Script" path="res://StoryIntroduction.gd" id="1_t6yug"]
+
+[node name="Story" type="CanvasLayer"]
+script = ExtResource("1_t6yug")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Oh no! Tulip is lost in the grassy plains! she needs to find her way home!
+
+Can you help her get home?
+
+Controls:
+Use arrow keys to move left, right, and jump. You can double jump by
+pressing the up arrow again while mid-air."
+
+[node name="Button" type="Button" parent="."]
+offset_left = 248.0
+offset_top = 220.0
+offset_right = 301.0
+offset_bottom = 251.0
+text = "Okay!"
